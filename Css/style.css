@@ -1,0 +1,90 @@
+:root {
+
+    --cinza: #aaa;
+    --vermelha: #e93d50;
+    --vermelha-escura: #af303f;
+    --branca: #fff;
+    --luz: rgb(229, 255, 0);
+
+}
+
+body {
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+
+    font-family: 'Montserrat', sans-serif;
+
+    background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+    
+
+}
+
+.titulo {
+
+    color: var(--branca);
+    margin-bottom: 20px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.teclado {
+
+    background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+    
+    border-radius: 30px;
+    
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    
+    box-shadow: 6px 8px 0 6px var(--cinza);
+    
+    font-size: 1.75em;
+    font-weight: bold;
+    color: var(--vermelha);
+
+}
+
+.teclado__tecla {
+
+    background-color: var(--branca);
+    height: 120px;
+    width: 120px;
+    border-radius: 30px;
+
+
+}
+
+.teclado__tecla:active {
+
+    background-color: var(--vermelha);
+    border: 4px solid  var(--vermelha);
+    box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+    color: var(--branca);
+    outline: none;
+
+}
+
+.teclado__tecla:active {
+
+    background-color: var(--vermelha);
+    border: 4px solid  var(--vermelha);
+    box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+    color: var(--branca);
+
+}
+
+.teclado__tecla:active:focus {
+
+    box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+
+}
